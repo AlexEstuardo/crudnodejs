@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Empresas y Sucursales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center">Gestión de Empresas y Sucursales</h1>
+<div class="d-flex justify-content-center mt-4">
+    <div>
+        <button class="btn btn-primary btn-lg" onclick="mostrarFormulario('empresa')">Registrar Empresa</button>
+        <button class="btn btn-primary btn-lg" onclick="mostrarFormulario('sucursal')">Registrar Sucursal</button>
+        <button class="btn btn-primary btn-lg" onclick="mostrarFormulario('editar-empresa')">Editar Empresa</button>
+        <button class="btn btn-primary btn-lg" onclick="mostrarFormulario('editar-sucursal')">Editar Sucursal</button>
+        <button class="btn btn-primary btn-lg" onclick="eliminar()">Eliminar</button>
+    </div>
+</div>
+
+<div id="datos" class="container mt-5">
+    <h2 class="text-center">Empresas</h2>
+    <table id="tabla-empresas" class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID Empresa</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Dirección Facturación</th>
+                <th>Representante Legal</th>
+                <th>Telefono</th>
+                <th>Correo Electrónico</th>
+                <th>Codigo Postal</th>
+                <th>Estado</th>
+                <th>Principal</th>
+                <th>Adiciono</th>
+                <th>Fecha Adicion</th>    
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+<div class="container mt-5">
+    <h2 class="text-center">Sucursales</h2>
+    <table id="tabla-sucursales" class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID Sucursal</th>
+                <th>ID Empresa</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+
+<script src="./funciones.js"></script>
+</body>
+</html>

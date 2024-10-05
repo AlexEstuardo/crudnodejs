@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Registro Sucursal</title>
+</head>
+<body>
+    <h1 class="text-center">Registro de Sucursal</h1>
+    <div class="container mt-5">
+        <form id="form-crear-sucursal" class="form-group">
+            <input class="form-control" type="text" id="idSucursal" placeholder="ID Sucursal" required>
+            <input class="form-control" type="text" id="idEmpresa" placeholder="ID Empresa" required>
+            <input class="form-control" type="text" id="descripcion" placeholder="Descripción" required>
+            <input class="form-control" type="text" id="direccion" placeholder="Dirección" required>
+            <input class="form-control" type="number" id="telefono" placeholder="Teléfono" required>
+            <input class="form-control" type="text" id="encargado" placeholder="Encargado" required>
+            <select class="form-control" id="estado" required>
+                <option value="A">Activo</option>
+                <option value="I">Inactivo</option>
+                <option value="PEN">Pendiente</option>
+                <option value="DES">Deshabilitado</option>
+                <option value="CAN">Cancelado</option>
+            </select>
+            <div class="d-flex justify-content-center mt-4">
+                <button type="submit" class="btn btn-primary">Crear Sucursal</button>
+            </div>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        <div>
+            <button class="btn btn-primary" onclick="mostrarFormulario('home')">Regresar al inicio</button>
+        </div>
+    </div>
+    <script src="forms.js"></script>
+    <script src="/vista/funciones.js"></script>
+</body>
+</html>

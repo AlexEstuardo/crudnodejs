@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Empresa y Sucursales</title>
+    <script src="./modulos/forms.js"></script>
+</head>
+<body>
+
+<h2>Eliminar Empresa y sus Sucursales</h2>
+
+<select id="select-empresa">
+    <option value="">Seleccione una empresa</option>
+</select>
+
+<button onclick="cargarSucursalesParaEliminar()">Cargar Sucursales</button>
+
+<h3>Datos de la Empresa Seleccionada</h3>
+<table id="tabla-empresa">
+    <thead>
+        <tr>
+            <th>ID Empresa</th>
+            <th>Nombre</th>
+            <th>Dirección</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<h3>Sucursales de la Empresa Seleccionada</h3>
+<table id="tabla-sucursales">
+    <thead>
+        <tr>
+            <th>ID Sucursal</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<button onclick="eliminarEmpresaConSucursales()">Eliminar Empresa y Sucursales</button>
+
+</body>
+</html>

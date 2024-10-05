@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Editar Empresa</title>
+</head>
+<body>
+
+<h2 class="text-center">Editar Empresa</h2>
+<div class="container mt-5">
+    <form id="form-editar-empresa"  class="form-group">
+        <input class="form-control" type="text" id="idEmpresa" placeholder="ID Empresa" required>
+        <input class="form-control" type="text" id="nombre" placeholder="Nombre" required>
+        <input class="form-control" type="text" id="direccion" placeholder="Dirección" required>
+        <input class="form-control" type="text" id="direccionfacturacion" placeholder="Dirección Facturación">
+        <input class="form-control" type="text" id="representantelegal" placeholder="Representante Legal">
+        <input class="form-control" type="text" id="telefono" placeholder="Teléfono">
+        <input class="form-control" type="email" id="correoelectronico" placeholder="Correo Electrónico">
+        <input class="form-control" type="text" id="codigopostal" placeholder="Código Postal">
+        <select class="form-control" id="estado" required>
+            <option value="A">Activo</option>
+            <option value="I">Inactivo</option>
+            <option value="PEN">Pendiente</option>
+            <option value="DES">Deshabilitado</option>
+            <option value="CAN">Cancelado</option>
+        </select>
+        <select class="form-control" id="principal" required>
+            <option value="S">Sí</option>
+            <option value="N">No</option>
+        </select>
+        <input class="form-control" type="text" id="adiciono" placeholder="Adicionado por" required>
+        <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn-primary">Editar Empresa</button>
+        </div>
+    </form>
+</div>
+<script src="forms.js"></script>
+</body>
+</html>
